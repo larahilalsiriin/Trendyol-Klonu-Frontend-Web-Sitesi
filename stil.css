@@ -1,0 +1,575 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+    
+  }
+  header img {
+    width: 170px;
+  }
+  header input {
+    padding: 10px;
+    width: 500px;
+    background-color: rgba(128, 128, 128, 0.323);
+    border: none;
+    border-radius: 5px;
+  }
+  header .input-area {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  header.icons {
+    display: flex;
+    gap: 30px;
+  }
+  header .input-area input {
+    position: relative;
+    margin-left: 100px; /* Logonun sağında 100px boşluk bırakır */
+  }
+  
+  header .input-area i {
+    position: absolute;
+    color: orangered;
+    margin-right: 10px;
+  } 
+
+
+  
+  /* İKONLARIN FOTOĞRAFLARIN ÜSTÜNE GELİNCE RENKLİ ÇERÇEVE EKLER: HOVER  */
+.icons i {
+margin-left: 30px;
+
+
+}
+  .icons i:hover {
+    color: orangered;
+    transition: 0.5s;
+  }
+ 
+  
+  .categories ul li {
+     
+    list-style-type:none; /* MENÜDEKİ MADDE İŞARETLERİNİ KALDIRARAK LİSTELER */
+    }
+
+.categories ul li a{
+    font:17px;
+    text-decoration:none; /* ALT ÇİZGİYİ KALDIRIR */
+    display:block;  /* ELEMANLARIN TAM SATIR KAPLAMASI GEREKEN DURUMLARDA KULLANILIR */
+    padding:14px 15px; /* BOŞLUK EKLER */
+    color: #000000;
+    font-weight: bold; /* YAZI TİPİNİN KALIN OLMASINI SAĞLAR */
+    }
+  .categories li {
+    font-family: sans-serif;
+    font-size: 15px;
+  }
+  
+   
+  .categories{ 
+    width:1500px;
+    height:50px;   
+    margin:0 auto;
+    border-bottom:4px solid #ffffff; 
+    border-radius: 20px;  
+  }
+.categories ul li a:hover{ color:orange;}
+
+
+.categories ul li ul {
+  display:none; 
+  right:0; 
+  position:relative; 
+  top:48px; 
+    }
+.categories ul  li ul a{
+  background:black; 
+  color:white; 
+  display:block;
+  font:bold 12px Arial, Helvetica, Sans-serif; 
+  margin:0px; 
+  width:55px; 
+  height:18px;    
+  text-decoration:none;
+  line-height:12px;
+  }
+.categories ul li:hover ul 
+{ 
+  display:block; 
+}
+
+  .brands {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .brands img {
+    width: 55px;
+    border: 3px solid orange;
+    border-radius: 50%;
+  }
+  .brands img:hover {
+    border: 3px solid orange;
+    cursor: pointer;
+    scale: 1.4;
+  }
+  .brand div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .brands span {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  .brands span:hover {
+    color: orange;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+   
+  
+  
+
+  /* Resimler arasındaki boşluğu ayarlamak için */
+table {
+  border-collapse: separate; /* Boşlukları gösterebilmek için */
+}
+
+td {
+  padding: 10px; /* Hücreler arasına 10px boşluk bırakır */
+}
+
+/* Alternatif olarak, boşlukları sadece resimlerin etrafında kullanmak isterseniz */
+td img {
+  display: block; /* Resimler arasındaki boşlukları yönetmek için */
+}
+
+
+  .table img:hover {
+    transform: scale(1); /* 'scale' özelliğini 'transform' ile birlikte kullanın */
+  }
+
+  
+  .cards {
+    border: 2px ;
+    background-color:#fffaf0;
+    border-radius: 10px;
+    padding: 20px;
+    margin:10px;
+    box-sizing:border-box;
+    width: 99%;
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+  
+  .card-info img {
+    height: 240px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .card-info img:hover {
+    scale: 1.3;
+    cursor: pointer;
+  }
+  
+  .card p {
+    color: orange;
+  }
+  .card h4 {
+    font-weight: bold;
+  }
+  .card h5 {
+    color: rgb(97, 97, 97);
+  }
+  .img-container {
+    place-items: center;
+    padding: 10px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .img-container img {
+    width: 400px;
+  }
+
+  .tags {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .tags a {
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .tags a:hover {
+    color: orange;
+  }
+  
+  .dip {
+    font-size: large;
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .dip h2 {
+    margin: 10px;
+  }
+
+  .dip p {
+    font-size: medium;
+  }
+
+  .titles {
+    display: flex;
+    margin: 1px;
+    cursor: pointer;
+    justify-content: center;
+    padding: 1px;
+    gap: 1px;
+    height:auto;
+    width:auto;
+  }
+  
+  .titles img:hover {
+    scale: 1.4;
+  }
+
+  #browsing-gw-homepage .component-list.component-small-list .component-item {
+    width: 33.33%;
+    padding: 0 12.5px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+  }
+  .popüler {
+    font-weight: 500;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+  }
+  .popüler span:hover {
+    cursor: pointer;
+    color: orange;
+  }
+  .popüler span {
+    font-weight: 200;
+  }
+  .popüler li {
+    list-style-type: none;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border: 2px solid black;
+    color: aliceblue;
+    height: 600px;
+    width: 1600px;
+    text-align: center;
+    list-style-position: none;
+    padding: 8px;
+    
+  }
+  .footerliste{
+    justify-content:center;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.carousel {
+    display: flex;
+    align-items:center;
+    width: 100%;
+    max-width: 1296px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+
+.carousel-container {
+    display: flex;
+    justify-content:center; /* Container içeriğini yatayda ortalar */
+    overflow:hidden;
+    width: 100%;
+    border: 8px solid #ffffff; /* 20 piksel genişliğinde, beyaz renkli, düz stil çerçeve */
+    padding: 1px; /* Çerçevenin iç kısmındaki içerik ile çerçeve arasında boşluk */
+    margin: 20px auto; /* Ortalanmış bir konum için otomatik yatay boşluk */
+    width:1700px; /* Çerçevenin genişliği */
+    text-align: center; /* İçeriği ortalar */
+
+}
+
+ 
+.carousel-container img:hover {
+  border-color: orange; /* Üzerine gelindiğinde kenar rengini değiştirir */
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Bu genişlik, her bir resmin toplam genişliğine uyacak şekilde ayarlanmalı */
+
+}
+  .carousel-images img {
+    width: 40%; /* Fotoğraf genişliği */
+    height: 40%; /* Fotoğraf yüksekliği */
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50%; /* Fotoğrafları yuvarlak yapar */
+    object-fit:cover; /* Fotoğrafın ortalanarak kırpılmasını sağlar */
+     
+}
+
+.img-container img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column; /* Dikey hizalama */
+  align-items: center; /* Yatayda ortalar */
+  text-align: center; /* Resim ve metni ortalar */
+  margin-bottom: 0px; /* Resim ve metnin altına boşluk ekler */
+}
+
+.image-caption {
+  font-size: 16px; /* Yazı boyutunu ayarlar */
+  color: #555; /* Yazı rengini ayarlar */
+   
+}
+
+.text {
+  margin-left: 20px; /* Sol tarafında 20px boşluk bırakır */
+}
+
+
+
+.carousel span {
+  margin-top: 100px; /* Fotoğraf ile yazı arasında boşluk bırakır */
+  font-size: 20px; /* Yazı boyutunu ayarlar */
+  color: #000000; /* Yazı rengini ayarlar */
+}
+
+  .nav-btn {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 1;
+    color: grey; /* Okların gri rengi */
+}
+
+.nav-btn:hover {
+    color: black; /* Okların üzerine gelindiğinde siyah rengi */
+}
+
+.content {
+    height: 0px; /* Sayfanın kaydırılabilir olması için yüksekliği arttır */
+    background: linear-gradient(to bottom, #fff, #ccc);
+}
+
+#scrollTopBtn {
+  display: none; /* Başlangıçta gizli */
+  position: fixed; /* Sayfanın köşesine sabitle */
+  bottom: 25px;
+  right: 25px;
+  z-index: 100; /* Diğer elemanların üstünde kalmasını sağla */
+  background-color: #ffffff; /* Buton rengi */
+  color: rgb(51, 51, 51);
+  padding: 10px 15px;
+  border: 1px solid rgb(95, 95, 95);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 20px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+#scrollTopBtn:hover {
+  background-color: #ffffff; /* Buton üzerine gelindiğinde değişen renk */
+  border: 1px solid orange;
+  color: orange;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+ 
+
+.menu ul {
+  list-style-type: none; /* Liste işaretlerini kaldırır */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Menüyü ortalar */
+
+}
+
+.menu ul li {
+  float: left; /* Menü öğelerini yatay hizalar */
+}
+
+
+.dropdown {
+  position: relative; /* Açılır menü konumlandırmasını sağlar */
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #ffffff; /* Buton arka plan rengi */
+  color: rgb(255, 255, 255); /* Buton metin rengi */
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none; /* Başlangıçta gizli */
+  position:absolute;
+  left: 0;
+  top:40 px;
+   border: 1px solid #ccc ;
+  background-color: #ffffff; /* Menü arka plan rengi */
+  min-width: 1300px; /* Menü genişliği */
+  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0); /* Gölge efekti */
+  z-index: 2; /* Menü, diğer içeriklerin üstünde görünür */
+  max-height: 950px; /* Taşma limitini belirle */
+  flex-direction: column; /* Öğeleri sütunlar halinde düzenler */
+  grid-template-columns: repeat(6, minmax(150px, 1fr)); /* Altı sütun oluşturur */
+    grid-auto-rows: 30px; /* Otomatik satır yüksekliği */
+    gap: 0.5px; /* Elemanlar arasında boşluk */
+    padding: 10px;
+    height: 750px;
+    margin-left: -50px;
+}
+
+.dropdown-content a {
+  color: black; /* Menü bağlantı rengi */
+  padding: 12px 16px; /* Menü öğesi iç boşluğu */
+  text-decoration:underline; 
+  font-size:smaller;
+  font-weight:lighter;
+  display: block; /* Menü öğelerini blok olarak gösterir */
+  padding: 1px 1px; /* Üst ve alt padding'i daralttık */
+  margin: 0; /* Varsayılan margin değerini sıfırladık */
+}
+
+.dropdown-content a:hover {
+  background-color: #ffffff; /* Üzerine gelindiğinde arka plan rengi değişir */
+}
+
+.dropdown:hover .dropdown-content {
+  display:grid; /* Menü görünür */
+}
+
+ 
+
+.underline-link {
+  text-decoration: none; /* Başlangıçta alt çizgi yok */
+  color: black; /* Yazı rengi */
+}
+
+.underline-link:hover {
+  text-decoration: underline; /* Üzerine gelindiğinde alt çizgi ekler */
+}
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  text-align:left;
+  margin-bottom: 45px;
+}
+
+.card-image {
+  width: 150px;
+  height: 150px;
+}
+
+.card-title {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.card-price {
+  font-size: 18px;
+  color: green;
+  margin-bottom: 10px;
+  
+}
+
+.add-to-cart {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 6px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.add-to-cart:hover {
+  background-color: #218838;
+}
+
+.cart {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+ 
